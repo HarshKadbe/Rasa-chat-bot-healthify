@@ -1,0 +1,214 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - inform
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - weather
+  - welcome_user
+  - ask_dehydrated
+  - treat_sunburn
+  - wash_hands
+  - expired_medicine
+  - natural_remedies
+  - stress_symptoms
+  - food_recc
+  - exercise_rel
+  - minor_cut
+  - better_sleep
+  - recover_common_cold
+  - virus_and_bacteria
+
+entities:
+  - age 
+  - gender
+  - medical_conditions
+  - physical_activity
+  - diet
+  - stress
+  - substance_use
+  - family_history
+  - primary_goals
+
+
+slots:
+  age:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: age
+
+  gender:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: gender
+
+  medical_conditions:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: medical_conditions
+
+  physical_activity:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: physical_activity
+
+  stress:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: stress
+
+  diet:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: diet
+
+  substance_use:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: substance_use
+
+  family_history:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: family_history
+
+  primary_goals:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: primary_goals
+
+forms:
+  health_risk_form:
+    required_slots:
+      - age
+      - gender
+      - medical_conditions
+      - physical_activity
+      - stress
+      - diet
+      - substance_use
+      - family_history
+      - primary_goals
+    
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_weather:
+  - text: "weather is good today"
+
+  utter_ask_age:
+  - text: "Hello! I'm here to help you improve your overall health and wellness. To provide personalized recommendations, I'll need to ask you a few questions. Let's get started.First, could you please tell me your age?"
+
+  utter_ask_gender:
+  - text: "Great, thank you. Next, could you specify your gender? (Male/Female)"
+
+  utter_ask_medical_conditions:
+  - text: "Excellent. Do you have any existing medical conditions or health concerns that I should know about? If yes, please specify."
+
+  utter_ask_stress_level:
+  - text: "Understood! how would you rate your stress levels?(Normal/High/Very High)"
+
+  utter_ask_physical_activity:
+  - text: "Alright. How often do you engage in physical activity or exercise? (Rarely/Frequently/Regularly)"
+
+  utter_ask_stress:
+  - text: "How stressed do you feel?(Minimal, moderate, high)"
+
+  utter_ask_diet:
+  - text: "Got it. Now, let's talk about your diet. What does your typical diet consist of, and do you have any specific dietary restrictions or preferences?"
+
+  utter_ask_substance_use:
+  - text: "Okay. Do you smoke, consume alcohol, or use any recreational drugs? (occasional/frequent/rare/never)"
+
+  utter_ask_family_history:
+  - text: "Thanks for sharing. Lastly, do you have a family history of any specific health conditions? If yes, please specify.?"
+
+  utter_ask_primary_goals:
+  - text: "Alright. Finally, what are your primary goals for improving your health and wellness?"
+
+  
+  utter_virus_and_bacteria:
+  - text: "Viruses are infectious agents that require a host cell to replicate, while bacteria are single-celled organisms that can replicate on their own. Viruses often cause respiratory or systemic infections, while bacteria can cause a wide range of infections."
+
+  utter_recover_common_cold:
+  - text: "Recovery from a common cold usually takes about 7 to 10 days. Rest, hydration, and symptom management can help speed up the recovery process."
+
+  utter_minor_cut:
+  - text: "Clean the wound with soap and water, apply an antibiotic ointment, and cover it with a bandage to protect against infection. Seek medical attention if the wound is deep or shows signs of infection."
+
+  utter_better_sleep:
+  - text: "Establishing a regular sleep schedule, creating a relaxing bedtime routine, and avoiding caffeine and electronics before bed can help improve sleep quality."
+
+  utter_exercise_rel:
+  - text: "It's generally okay to engage in light exercise when you're not feeling well, but listen to your body and avoid strenuous activity. If you're experiencing symptoms like fever or body aches, it's best to rest."
+
+  utter_food_recc:
+  - text: "Foods that are easy to digest and provide nourishment, such as broth-based soups, toast, bananas, and applesauce, can help when you're feeling sick."
+
+  utter_stress_symptoms:
+  - text: "Yes, stress can manifest as physical symptoms such as headaches, muscle tension, digestive issues, and fatigue."
+
+  utter_natural_remedies:
+  - text: "Natural remedies for allergies include saline nasal rinses, local honey, and herbal supplements like butterbur and quercetin."
+
+  utter_expired_medicine:
+  - text: "Expired medication may not be as effective or safe. It's best to dispose of expired medication properly and consult a healthcare professional for replacements."
+
+  utter_wash_hands:
+  - text: "It's recommended to wash your hands frequently, especially before eating, after using the restroom, and after coughing or sneezing."
+
+  utter_treat_sunburn:
+  - text: "To treat a sunburn, apply cool compresses, moisturize with aloe vera gel, and take over-the-counter pain relievers if needed."
+
+  utter_ask_dehydration:
+  - text: "Symptoms of dehydration include thirst, dry mouth, dark urine, fatigue, and dizziness."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions:
+- action_say_data

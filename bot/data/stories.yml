@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+- story: tell dehydration
+  steps:
+  - intent: ask_dehydrated
+  - action: utter_ask_dehydration
+
+- story: tell treat_sunburn
+  steps:
+  - intent: treat_sunburn
+  - action: utter_treat_sunburn
+
+- story: tell wash_hands
+  steps:
+  - intent: wash_hands
+  - action: utter_wash_hands
+
+- story: tell expired_medicine
+  steps:
+  - intent: expired_medicine
+  - action: utter_expired_medicine
+
+- story: tell natural_remedies
+  steps:
+  - intent: natural_remedies
+  - action: utter_natural_remedies
+
+- story: tell stress_symptoms
+  steps:
+  - intent: stress_symptoms
+  - action: utter_stress_symptoms
+
+- story: tell food_recc
+  steps:
+  - intent: food_recc
+  - action: utter_food_recc
+
+- story: tell exercise_rel
+  steps:
+  - intent: exercise_rel
+  - action: utter_exercise_rel
+
+- story: tell better_sleep
+  steps:
+  - intent: better_sleep
+  - action: utter_better_sleep
+
+- story: tell minor_cut
+  steps:
+  - intent: minor_cut
+  - action: utter_minor_cut
+
+- story: tell recover_common_cold
+  steps:
+  - intent: recover_common_cold
+  - action: utter_recover_common_cold
+
+- story: tell virus_and_bacteria
+  steps:
+  - intent: virus_and_bacteria
+  - action: utter_virus_and_bacteria

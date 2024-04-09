@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rasa Chatbot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Rasa Chatbot</h1>
+    <div id="chat-container"></div>
+    <input type="text" id="message-input">
+    <button id="send-button">Send</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#send-button').click(function() {
+                var message = $('#message-input').val();
+                sendMessage(message);
+                $('#message-input').val('');
+            });
+
+            function sendMessage(message) {
+                $.ajax({
+                    url: '/api/chat/',
+                    type: 'POST',
+                    data: { message: message },
+                    success: function(data) {
+                        var response = data.response;
+                        addMessage('You', message);
+                        addMessage('Bot', response);
+                    },
+                    error: function() {
+                        addMessage('Bot', 'Failed to get response from Rasa server');
+                    }
+                });
+            }
+
+            function addMessage(sender, message) {
+                $('#chat-container').append('<p><strong>' + sender + ':</strong> ' + message + '</p>');
+            }
+        });
+    </script>
+</body>
+</html>

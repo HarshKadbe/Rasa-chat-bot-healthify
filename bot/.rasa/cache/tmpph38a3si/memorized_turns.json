@@ -1,0 +1,29 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhPLE4Iz4jMS+luLY2FgB5Cx2O": "utter_wash_hands",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhPLE4Iz4jMS+luJaAQaUlJalF8Ujq8ZoVCwCVADqy": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohtSK1KDmzODW+KDWntjYWALV/Hmg=": "utter_exercise_rel",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohtSK1KDmzODW+KDWnloBRpSUlqUXxKDoImBcLAAfkPUA=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohtaIgsyg1JT43NSUzOTMvtbY2FgAydx/8": "utter_expired_medicine",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohtaIgsyg1JT43NSUzOTMvtZaAcaUlJalF8Ri6iDA3FgAJCEH8": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fkppRmVKUWJKaUlsbCwDyUx8q": "utter_ask_dehydration",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fkppRmVKUWJKaUkvAsNKSktSieGQ9QDnChsYCAL8CQAM=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhLLOotDg+MS8lPgmoMrUoM7G2NhYAdCMg0w==": "utter_virus_and_bacteria",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhLLOotDg+MS8lPgmoMrUoM7GWgIGlJUBl8Vj0EWV2LACn7USB": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohL7GktCgxJ74oNTc1JTO1uLY2FgAzMiAS": "utter_natural_remedies",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohL7GktCgxJ74oNTc1JTO1uJaAcaUlJalF8Ri6iDA3FgAVtUI+": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhKDU5vyy1KD45PzcXqCw5PyeltjYWAJV+IU0=": "utter_recover_common_cold",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhKDU5vyy1KD45PzcXqCw5PyelloCJpSUlQA3YNBJneiwAhClF7w==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhpCg1sSS+uDQvqbQor7Y2FgDVdR76": "utter_treat_sunburn",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhpCg1sSS+uDQvqbQor5aAWaUlJalF8ahaCJkYCwDapT72": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKbWkJLUovjgnNbWgtjYWALVsHmw=": "utter_better_sleep",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKbWkJLUovjgnNbWgloBRpWClKDoImBcLAAljPUw=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhuKQotbg4vrgyt6AkP7e4tjYWABaAH/0=": "utter_stress_symptoms",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhuKQotbg4vrgyt6AkP7e4loBppSUlqUXx6JoImxoLAH5iQf8=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohLT8/Jb4oNTm5tjYWAFsgHRI=": "utter_food_recc",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohLT8/Jb4oNTm5loA5pSUlqUXxCOX4TIoFANplOT4=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohNzMvvyg+ubSktjYWAFwwHT4=": "utter_minor_cut",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohNzMvvyg+ubSkloA5pSUlqUXxCOX4TIoFAO7xOcI=": "action_listen"
+  }
+}

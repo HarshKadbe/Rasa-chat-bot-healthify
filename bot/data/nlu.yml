@@ -1,0 +1,209 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: welcome_user
+  examples: |
+    - help to check out symptoms
+    - tell me more about my symptom
+    - symptoms
+    - risk 
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_dehydrated
+  examples: |
+    - What are the symptoms of dehydration?
+    - dehydration
+    - How can I know if I have been dehydrated?
+    - Can you tell me more about dehydration?
+
+- intent: treat_sunburn
+  examples: |
+    - How do I treat sunburn?
+    - Treatment for sunburn?
+    - What should I do after getting sunburned?
+    - Help with treating sunburn.
+    - What's the best way to treat a sunburn?
+
+- intent: wash_hands
+  examples: |
+    - How often should I wash my hands?
+    - When should I handwash?
+
+- intent: expired_medicine
+  examples: |
+    - Is it safe to take expired medication?
+    - expired medication?
+
+- intent: natural_remedies
+  examples: |
+    - What are some natural remedies for allergies?
+    - Natural remedies for colds and flu?
+    - Remedies for insomnia?
+
+- intent: stress_symptoms
+  examples: |
+    - Can stress affect my physical health?
+    - I feel very stressed out lately
+    - My stress levels have been high
+    - I have trouble relaxing due to stress
+    - Stress is affecting my health
+
+- intent: food_recc
+  examples: |
+    - What are the best foods to eat when I'm feeling sick?
+    - Food recommendations for cough?
+
+- intent: exercise_rel
+  examples: |
+    - Is it okay to exercise when I'm not feeling well?
+    - Regular exercise helps me relax
+    - I feel more energetic after exercising
+    - Exercise is important for my mental health
+    - I try to exercise regularly to stay healthy
+
+- intent: better_sleep
+  examples: |
+    - How can I get better sleep at night?"
+    - better sleep at night
+    
+- intent: minor_cut
+  examples: |
+    - What should I do if I have a minor cut or scrape?
+    - minor cut
+    - minor scrap
+
+- intent: recover_common_cold
+  examples: |
+    - How long does it take to recover from a common cold?
+    - Recovery time for a common cold
+
+- intent: virus_and_bacteria
+  examples: |
+    - What's the difference between a virus and bacteria?
+    - virus and bacteria
+
+- intent: inform
+  examples: |
+    - I am [35](age) years old
+    - My age is [35](age)
+    - Age: [35](age)
+    - I am [male](gender)
+    - Gender: [female](gender)
+    - I identify as [male](gender)
+    - I have [diabetes](medical_conditions)
+    - I suffer from [asthma](medical_conditions)
+    - I have [high blood pressure](medical_conditions)
+    - I [rarely](physical_activity) do physical activity
+    - I [frequently](physical_activity) engage in physical activity
+    - My physical activity level is [low](physical_activity)
+    - My physical activity level is [high](physical_activity)
+    - I have an [unhealthy diet](diet)
+    - My diet is [mostly plant-based](diet)
+    - I do not use any [substances](substance_use)
+    - I smoke [occasionally](substance_use)
+    - [frequent](substance_use)
+    - [rare](substance_use)
+    - [never](substance_use)
+    - There is no [family history](family_history) of medical conditions
+    - [no](family_history)
+    - My primary goal is to [lose weight](primary_goals)
+    - I want to [improve my fitness](primary_goals)
+    - My goal is to [reduce stress](primary_goals)
+    - [34](age)
+    - [male](gender)
+    - [diabetes](medical_conditions)
+    - [Rarely]{"entity": "physical_activity", "value": "rarely"}
+    - [healthy](diet)
+    - [occasionally](substance_use)
+    - no [family history](family_history)
+    - [minimal](stress)
+    - [moderate](stress)
+    - [high](stress)
+
+- intent: weather
+  examples: |
+    - What's the current weather like?
+    - Tell me about the forecast.
+    - weather

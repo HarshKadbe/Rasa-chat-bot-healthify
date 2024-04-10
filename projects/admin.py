@@ -1,6 +1,4 @@
 from django.contrib import admin
-from .models import ChatBotResponse, PreDefineQA, ChatResponses
+from .models import ChatResponses
 
-admin.site.register(ChatBotResponse)
-admin.site.register(PreDefineQA)
 admin.site.register(ChatResponses)

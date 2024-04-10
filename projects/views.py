@@ -1,4 +1,3 @@
-#from django import views
 from django.contrib.auth import get_user_model
 from django.shortcuts import render
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
@@ -8,9 +7,12 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import generics
 
-from .models import ChatBotResponse, PreDefineQA, ChatResponses
-from .serializers import UserSerializer, ChatBotResponseSerializer , DialogflowWebhookSerializer  
+from .models import ChatResponses
+from .serializers import UserSerializer
 from rest_framework.views import APIView      
+
+import requests
+
         
 class RegisterUserView(generics.CreateAPIView):
     queryset = get_user_model().objects.all()
@@ -38,50 +40,6 @@ class UpdateUserView(generics.UpdateAPIView):
         serializer.save()
            
 
-
-# class ChatBotResponseView(generics.CreateAPIView):
-#     queryset = ChatBotResponse.objects.all()
-#     serializer_class = ChatBotResponseSerializer
-#     permission_classes = [IsAuthenticated]
-    
-#     def perform_create(self, serializer):
-#         user_question = serializer.validated_data.get('question', '')
-#         predefined_qa = PreDefineQA.objects.filter(question=user_question).first()
-        
-#         if predefined_qa:
-#             predefined_answer = predefined_qa.answer
-#             serializer.save(answer=predefined_answer, user=self.request.user)
-#             return Response({'answer': predefined_answer}, status=status.HTTP_200_OK)
-#         else:
-#             serializer.save(user=self.request.user)
-          
-        
-# class ChatBot(APIView):
-    
-#     # def post(self, request):
-#     #     serializer = DialogflowWebhookSerializer(data=request.data)
-#     #     if serializer.is_valid():
-#     #         query = serializer.validated_data['query']
-#     #         response = serializer.validated_data['response']
-#     #         user = request.user
-#     #         ChatResponses.objects.create(user=user, query=query, response=response)
-#     #         return Response({'fulfillmentText': 'Data saved successfully'}, status=status.HTTP_200_OK)
-#     #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    
-#     def post(self, request):
-#         serializer = DialogflowWebhookSerializer(data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response({'message': 'Response saved successfully'}, status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-#     def get(self, request):
-#         return render(request, 'main.html')
-    
-
-
-import requests
     
 class RasaChatAPIView(APIView):
     

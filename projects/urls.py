@@ -16,9 +16,5 @@ urlpatterns = [
     
     path('chat/', RasaChatAPIView.as_view(), name='chat'),
 
-
-
-    
-
 ]
 

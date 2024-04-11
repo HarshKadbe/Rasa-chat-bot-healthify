@@ -43,7 +43,7 @@ class UpdateUserView(generics.UpdateAPIView):
     
 class RasaChatAPIView(APIView):
     
-    permission_classes = (IsAuthenticated, )
+    #permission_classes = (IsAuthenticated, )
     
     def post(self, request):
         user = request.user

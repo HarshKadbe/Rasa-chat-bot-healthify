@@ -153,10 +153,10 @@ WSGI_APPLICATION = 'healthify.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'healthifydb',
+        'ENGINE': '',
+        'NAME': '',
         'USER': '',
-        'PASSWORD': 'HarshKadbe@0105',
+        'PASSWORD': '',
         'HOST': '',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
